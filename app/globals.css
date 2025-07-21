@@ -335,3 +335,277 @@
     }
   }
 }
+
+/* Custom animations for interactive cards */
+@layer utilities {
+  /* Gradient animation */
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+  
+  /* Float animation */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 3s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+  
+  /* Shimmer effect */
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 2s ease-out;
+  }
+  
+  /* Bounce in animation */
+  @keyframes bounce-in {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .animate-bounce-in {
+    animation: bounce-in 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  /* Heart burst animation */
+  @keyframes heart-burst {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+  }
+  
+  .animate-heart-burst {
+    animation: heart-burst 0.6s ease-out;
+  }
+  
+  /* Pulse slow animation */
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 2s ease-in-out infinite;
+  }
+  
+  /* Spin slow animation */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+  
+  /* Animation delays */
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  
+  /* 3D card effect */
+  .card-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  }
+  
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(5deg);
+  }
+  
+  /* Particle system */
+  .particle {
+    position: absolute;
+    pointer-events: none;
+    width: 4px;
+    height: 4px;
+    background: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    animation: particle-float 2s ease-out forwards;
+  }
+  
+  @keyframes particle-float {
+    0% {
+      opacity: 1;
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(var(--tx, 0), var(--ty, -60px)) scale(0);
+    }
+  }
+  
+  /* Morphing blob background */
+  @keyframes morph {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+  }
+  
+  .animate-morph {
+    animation: morph 8s ease-in-out infinite;
+  }
+  
+  /* Glitch effect */
+  @keyframes glitch {
+    0%, 100% { transform: translate(0); filter: hue-rotate(0deg); }
+    20% { transform: translate(-2px, 2px); filter: hue-rotate(90deg); }
+    40% { transform: translate(-2px, -2px); filter: hue-rotate(180deg); }
+    60% { transform: translate(2px, 2px); filter: hue-rotate(270deg); }
+    80% { transform: translate(2px, -2px); filter: hue-rotate(360deg); }
+  }
+  
+  .animate-glitch:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+  
+  /* Wave animation */
+  @keyframes wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+  }
+  
+  .animate-wave {
+    animation: wave 1s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+  
+  /* View Transitions API */
+  @supports (view-transition-name: none) {
+    /* Page transitions */
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+      animation-duration: 0.3s;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    ::view-transition-old(root) {
+      animation-name: fade-out-scale;
+    }
+    
+    ::view-transition-new(root) {
+      animation-name: fade-in-scale;
+    }
+    
+    @keyframes fade-out-scale {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+      to {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+    }
+    
+    @keyframes fade-in-scale {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    
+    /* Card morphing transitions */
+    [style*="view-transition-name"] {
+      contain: layout;
+    }
+    
+    /* Navigation item transitions */
+    .nav-item {
+      view-transition-name: nav-item;
+    }
+    
+    /* Smooth cross-fade for images */
+    img {
+      view-transition-name: image;
+      contain: paint;
+    }
+  }
+  
+  /* Scroll-driven animations (CSS-only) */
+  @supports (animation-timeline: scroll()) {
+    .scroll-fade-in {
+      animation: fade-in linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 30%;
+    }
+    
+    .scroll-scale-in {
+      animation: scale-in linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+    
+    .scroll-parallax {
+      animation: parallax linear;
+      animation-timeline: scroll();
+    }
+    
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes scale-in {
+      from {
+        scale: 0.8;
+        opacity: 0;
+      }
+      to {
+        scale: 1;
+        opacity: 1;
+      }
+    }
+    
+    @keyframes parallax {
+      to {
+        transform: translateY(calc(var(--parallax-speed, 50) * 1%));
+      }
+    }
+  }
+  
+  /* Reduced motion support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
