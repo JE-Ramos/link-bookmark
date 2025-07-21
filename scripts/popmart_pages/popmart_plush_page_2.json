@@ -1,0 +1,1024 @@
+{
+    "total": 85,
+    "id": 146,
+    "name": "Plush toys",
+    "desc": "",
+    "mainImage": "",
+    "productData": [
+      {
+        "id": "1898",
+        "title": "THE MONSTERS FALL IN WILD SERIES-Vinyl Plush Doll Pendant",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20240411_182654_577836__1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20240411_182655_645702__1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20240411_182655_818226__1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20240411_182655_135463__1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20240411_182654_928028__1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1743559200,
+        "skus": [
+          {
+            "id": "2794",
+            "price": 140000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 140000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1883",
+        "title": "We are Twinkle Twinkle Series-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250327_181016_208897____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1743127200,
+        "skus": [
+          {
+            "id": "2774",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 84,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1880",
+        "title": "PUCKY BEANIE BUBBLE UP SERIES-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250327_091702_262117____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1743127200,
+        "skus": [
+          {
+            "id": "2771",
+            "price": 55000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 55000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 82,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1879",
+        "title": "Ted2  Teddy Bear  Action Plush Pendant",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_408314____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_755107____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_012053____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_965813____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_436738____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105236_337069____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_105237_630985____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1743127200,
+        "skus": [
+          {
+            "id": "2769",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2770",
+            "price": 540000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 540000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1877",
+        "title": "PUCKY BEANIE BUBBLE UP SERIES-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_511535____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_673188____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_037333____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_858581____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_536048____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250326_100905_673478____6_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1743127200,
+        "skus": [
+          {
+            "id": "2765",
+            "price": 55000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 55000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2766",
+            "price": 330000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 330000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1875",
+        "title": "SPY×FAMILY Anya's Secret Society Series Plush Toy",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250326_104623_190802_________1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250325_161155_210551____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250325_161156_012042____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250325_161155_191407____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250325_161155_523964____7_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250325_161155_406481____8_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1743127200,
+        "skus": [
+          {
+            "id": "2761",
+            "price": 45000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 45000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2760",
+            "price": 45000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 45000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2762",
+            "price": 45000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 45000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1850",
+        "title": "DIMOO WORLD × DISNEY Series-Vinyl Plush Keychain Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250319_175751_568297____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1742522400,
+        "sendTime": 1744646400,
+        "skus": [
+          {
+            "id": "2733",
+            "price": 147000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 147000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 79,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1843",
+        "title": "DIMOO WORLD × DISNEY Series-Mickey Vinyl Plush Bag",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_777224____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_049542____1-2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_017736____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_343863____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_720761____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_147080____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_771364____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_162938_217454____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1742522400,
+        "skus": [
+          {
+            "id": "2725",
+            "price": 500000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 500000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1832",
+        "title": "CRYBABY Sunset Concert Series-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250313_141425_791695____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2706",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 75,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1831",
+        "title": "CRYBABY Sad Club Series-Plush Flower Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250313_141032_382368____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2705",
+            "price": 60000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 60000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 74,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1829",
+        "title": "CRYBABY × Powerpuff Girls Series-Vinyl Face Plush Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250313_100557_397159____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2703",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 72,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1825",
+        "title": "GONG Original Roaming Series Plush Toy Car",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250312_151726_256550____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2699",
+            "price": 55000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 55000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 68,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1824",
+        "title": "THE MONSTERS COCA-COLA SERIES-Vinyl Face Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20250221_091720_773021____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2698",
+            "price": 140000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 140000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 67,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1821",
+        "title": "Harry Potter Magic Academy Cotton Dolls",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250314_091956_127321____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091956_256639____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_490643____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_285876____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_062008____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_520271____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_526515____7_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_264915____8_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250314_091942_115381____10_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1741917600,
+        "skus": [
+          {
+            "id": "2694",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2695",
+            "price": 540000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 540000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1817",
+        "title": "THE MONSTERS - Exciting Macaron Vinyl Face Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20240709_105311_168194____1-the-monsters_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "skus": [
+          {
+            "id": "2690",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 64,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1799",
+        "title": "DIMOO My Cloud Companion Series-Cotton Doll Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20250212_174740_936054____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "skus": [
+          {
+            "id": "2664",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 20,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1779",
+        "title": "SKULLPANDA Winter Symphony Series Plush",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20241204_111332_857297____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "sendTime": 1747238400,
+        "skus": [
+          {
+            "id": "2644",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 63,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1762",
+        "title": "THE MONSTERS Classic Series-Sparkly Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20241121_160640_145978____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "skus": [
+          {
+            "id": "2627",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 6,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1760",
+        "title": "CRYBABY Crying Again Series-Vinyl Face Plush Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20241114_104405_745371____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "skus": [
+          {
+            "id": "2625",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 8,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1751",
+        "title": "THE MONSTERS - Have a Seat Vinyl Plush Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20240709_172053_283652____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1741312800,
+        "skus": [
+          {
+            "id": "2616",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 24,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      }
+    ]
+  }
