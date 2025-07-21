@@ -1,106 +1,163 @@
-# Admin System Guide
+# Admin Guide - Link Bookmark
 
-## Overview
-This admin system provides comprehensive tools for managing users, links, and viewing analytics in your link bookmarking application.
+This guide covers administrative operations for the Link Bookmark application using Convex functions.
 
-## Setup
+## Key Concepts
 
-### 1. Configure Clerk Authentication
-Make sure your Clerk environment variables are set in the Convex Dashboard:
-- `CLERK_JWT_ISSUER_DOMAIN`
+1. **Authentication**: Uses Clerk for user authentication with clerk IDs
+2. **Database**: Convex provides real-time database with TypeScript safety
+3. **Admin Access**: No built-in admin system - use Convex dashboard or create custom admin functions
 
-### 2. Make the First Admin
-There are two ways to create an admin:
+## Common Admin Tasks
 
-#### Option A: Automatic First User
-The first user who signs up can be automatically made an admin by calling:
+### 1. User Management
+
+#### View All Users
 ```typescript
-// In your frontend after user signs up
-const wasAdminCreated = await mutation(api.setup.makeFirstUserAdmin);
+// In Convex dashboard console
+await ctx.db.query("users").collect()
 ```
 
-#### Option B: Manual via Convex Dashboard
-Run this in the Convex Dashboard Functions panel:
-```javascript
-await internal.setup.makeUserAdminByEmail({ email: "admin@example.com" });
+#### Find User by Clerk ID
+```typescript
+await ctx.db
+  .query("users")
+  .withIndex("by_clerk", q => q.eq("clerkId", "user_123"))
+  .unique()
 ```
 
-## Admin Functions
+### 2. Link Management
 
-### Analytics Dashboard
+#### View All Links
 ```typescript
-// Get comprehensive analytics
-const analytics = await query(api.admin.getAnalytics);
-// Returns: totalUsers, totalLinks, platformBreakdown, topLinks, etc.
+await ctx.db.query("links").collect()
 ```
 
-### User Management
+#### Delete a Link
 ```typescript
-// Get all users
-const users = await query(api.admin.getAllUsers, {
-  searchTerm: "john", // optional
-  onlyAdmins: true,   // optional
-});
-
-// Toggle admin status
-await mutation(api.admin.toggleUserAdmin, {
-  userId: "user_id_here"
-});
+// First find the link
+const link = await ctx.db.get(linkId)
+// Then delete it
+await ctx.db.delete(linkId)
 ```
 
-### Link Management
+#### Update Link Visibility
 ```typescript
-// Get all links with filters
-const links = await query(api.admin.getAllLinks, {
-  searchTerm: "product",  // optional
-  platform: "shopee",     // optional
-  userId: "user_id",      // optional
-  onlyPublic: true,       // optional
-});
-
-// Delete a link
-await mutation(api.admin.deleteLink, {
-  linkId: "link_id_here"
-});
-
-// Toggle link visibility
-await mutation(api.admin.toggleLinkVisibility, {
-  linkId: "link_id_here"
-});
-
-// Bulk delete links
-await mutation(api.admin.bulkDeleteLinks, {
-  linkIds: ["link1", "link2", "link3"]
-});
+await ctx.db.patch(linkId, {
+  isPublic: false
+})
 ```
 
-### Check Admin Status
+#### Search Links by URL Domain
 ```typescript
-// Check if current user is admin
-const status = await query(api.setup.getCurrentUserAdminStatus);
-// Returns: { isAuthenticated, isAdmin, email }
+await ctx.db
+  .query("links")
+  .filter(q => q.eq(q.field("platform"), "example.com"))
+  .collect()
 ```
 
-## Frontend Integration Example
+### 3. Bookmark Management
 
+#### View User's Bookmarks
 ```typescript
-// AdminRoute.tsx
-import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+await ctx.db
+  .query("bookmarks")
+  .withIndex("by_user", q => q.eq("userId", "user_123"))
+  .collect()
+```
 
-export function AdminRoute({ children }) {
-  const status = useQuery(api.setup.getCurrentUserAdminStatus);
-  
-  if (!status?.isAdmin) {
-    return <div>Unauthorized</div>;
+### 4. Data Cleanup
+
+#### Remove Orphaned Bookmarks
+```typescript
+const bookmarks = await ctx.db.query("bookmarks").collect()
+for (const bookmark of bookmarks) {
+  const link = await ctx.db.get(bookmark.linkId)
+  if (!link) {
+    await ctx.db.delete(bookmark._id)
   }
-  
-  return children;
 }
 ```
 
-## Security Notes
-1. All admin functions use `requireAdmin` which validates both authentication and admin status
-2. Regular users cannot access admin functions - they will receive "Unauthorized" errors
-3. The system tracks user activity with `lastActiveAt` timestamps
-4. All actions are logged to the console for audit purposes 
+## Creating Custom Admin Functions
+
+Add to `convex/admin.ts`:
+
+```typescript
+import { mutation, query } from "./_generated/server";
+import { v } from "convex/values";
+
+// Example: Ban/unban a user
+export const toggleUserBan = mutation({
+  args: { 
+    userId: v.id("users"),
+    banned: v.boolean() 
+  },
+  handler: async (ctx, args) => {
+    // Add your admin authentication check here
+    await ctx.db.patch(args.userId, {
+      banned: args.banned
+    });
+  },
+});
+
+// Example: Get platform statistics
+export const getPlatformStats = query({
+  args: {},
+  handler: async (ctx) => {
+    const links = await ctx.db.query("links").collect();
+    const platformCounts: Record<string, number> = {};
+    
+    for (const link of links) {
+      const platform = link.platform || 'unknown';
+      platformCounts[platform] = (platformCounts[platform] || 0) + 1;
+    }
+    
+    return platformCounts;
+  },
+});
+```
+
+## Direct Database Operations
+
+Use the Convex Dashboard for direct database operations:
+
+1. Go to your Convex dashboard
+2. Navigate to "Data" tab
+3. Select the table you want to modify
+4. Use the interface to view, edit, or delete records
+
+## Seeding Demo Data
+
+Run the seed function:
+```bash
+npx convex run seed
+```
+
+The seed file includes various types of links from different websites to demonstrate the app's capabilities.
+
+## Security Considerations
+
+1. **Always validate admin permissions** in mutation functions
+2. **Use Clerk roles/metadata** for admin identification
+3. **Audit sensitive operations** by logging admin actions
+4. **Limit direct database access** to production data
+
+## Monitoring
+
+1. Use Convex Dashboard's "Logs" tab to monitor function executions
+2. Set up error tracking for failed operations
+3. Monitor usage metrics in the "Usage" tab
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Missing user records**: Can occur if Clerk webhook fails
+   - Solution: Implement user creation on first action
+
+2. **Orphaned bookmarks**: Links deleted but bookmarks remain
+   - Solution: Use cascade delete or cleanup job
+
+3. **Platform field inconsistency**: Different URL formats
+   - Solution: Normalize URLs when saving 

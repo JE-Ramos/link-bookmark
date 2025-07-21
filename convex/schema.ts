@@ -13,7 +13,7 @@ export default defineSchema({
     description: v.optional(v.string()),
     image: v.optional(v.string()),
     favicon: v.optional(v.string()),
-    platform: v.optional(v.string()), // shopee, lazada, tiktok, etc.
+    platform: v.optional(v.string()), // Domain of the website
     
     // Product specific fields
     price: v.optional(v.string()),
@@ -34,8 +34,8 @@ export default defineSchema({
   })
     .index("by_user", ["userId"])
     .index("by_public", ["isPublic"])
-    .index("by_platform", ["platform"])
-    .index("by_reminder", ["userId", "reminderDate"]),
+    .index("by_reminder", ["userId", "reminderDate"])
+    .index("by_platform", ["platform"]),
   
   bookmarks: defineTable({
     userId: v.string(),

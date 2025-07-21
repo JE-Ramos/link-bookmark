@@ -73,8 +73,8 @@ export default function LinksPage() {
   };
 
   // Get unique platforms
-  const platforms = links
-    ? Array.from(new Set(links.map(l => l.platform).filter(Boolean)))
+  const platforms: string[] = links
+    ? Array.from(new Set(links.map(l => l.platform).filter(Boolean))) as string[]
     : [];
 
   return (

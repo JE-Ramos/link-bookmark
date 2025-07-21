@@ -5,7 +5,6 @@ import { CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from 
 import { Star, ShoppingCart, Heart, Truck, Shield, ExternalLink, Clock, Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BaseCard } from "./base-card";
-import Image from "next/image";
 
 interface ProductCardProps {
   title: string;
@@ -19,11 +18,9 @@ interface ProductCardProps {
   brand?: string;
   rating?: number;
   reviewCount?: number;
-  category?: string;
   features?: string[];
   freeShipping?: boolean;
   warranty?: string;
-  platform?: string;
   reminderDate?: number;
   bookmarkCount?: number;
   isBookmarked?: boolean;
@@ -33,25 +30,6 @@ interface ProductCardProps {
   onSetReminder?: () => void;
   onVisit?: () => void;
 }
-
-// Platform icons as SVG components
-const PlatformIcons: Record<string, React.FC<{ className?: string }>> = {
-  shopee: ({ className }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM12 3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-2.76 0-5-2.24-5-5h2c0 1.66 1.34 3 3 3s3-1.34 3-3h2c0 2.76-2.24 5-5 5z"/>
-    </svg>
-  ),
-  lazada: ({ className }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 00-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
-    </svg>
-  ),
-  tiktok: ({ className }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
-    </svg>
-  ),
-};
 
 export function ProductCard({
   title,
@@ -65,11 +43,9 @@ export function ProductCard({
   brand,
   rating,
   reviewCount,
-  category,
   features,
   freeShipping,
   warranty,
-  platform,
   reminderDate,
   bookmarkCount = 0,
   isBookmarked = false,
@@ -109,7 +85,6 @@ export function ProductCard({
   };
 
   const domain = new URL(url).hostname.replace("www.", "");
-  const PlatformIcon = platform && PlatformIcons[platform];
   
   // Format reminder date
   const formatReminder = (date: number) => {
@@ -126,12 +101,11 @@ export function ProductCard({
       {/* Product Image */}
       {image && (
         <div className="relative aspect-square overflow-hidden bg-gray-50">
-          <Image
+          <img
             src={image}
             alt={title}
-            fill
             className="object-contain w-full h-full p-4"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            loading="lazy"
           />
           {discount && (
             <div className="absolute top-2 left-2">
@@ -244,11 +218,9 @@ export function ProductCard({
 
       {/* Platform icon and title */}
       <div className="flex items-start gap-2 mt-3">
-        {PlatformIcon && (
-          <div className="w-6 h-6 flex-shrink-0">
-            <PlatformIcon className="w-full h-full" />
-          </div>
-        )}
+        <div className="w-6 h-6 flex-shrink-0">
+          <ExternalLink className="w-full h-full" />
+        </div>
         <h3 className="font-semibold text-sm line-clamp-2 flex-1">{title}</h3>
       </div>
 

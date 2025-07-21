@@ -1,7 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
-import { Doc, Id } from "./_generated/dataModel";
-import { getOrCreateUser } from "./auth";
+import { getOrCreateUser, getAuthUserId } from "./auth";
 
 // Create a new link
 export const createLink = mutation({
@@ -84,7 +83,14 @@ export const getUserCollection = query({
     })
   ),
   handler: async (ctx, args) => {
-    const userId = args.userId || "user123"; // TODO: Get from auth
+    // Get authenticated user
+    const authUserId = await getAuthUserId({ auth: ctx.auth });
+    if (!authUserId) {
+      // Return empty array if not authenticated
+      return [];
+    }
+    
+    const userId = args.userId || authUserId;
     
     const bookmarks = await ctx.db
       .query("bookmarks")
@@ -160,13 +166,16 @@ export const toggleBookmark = mutation({
   },
   returns: v.boolean(),
   handler: async (ctx, args) => {
-    const userId = "user123"; // TODO: Get from auth
+    const authUserId = await getAuthUserId({ auth: ctx.auth });
+    if (!authUserId) {
+      throw new Error("Unauthorized: Must be logged in to bookmark");
+    }
     
     // Check if already bookmarked
     const existingBookmark = await ctx.db
       .query("bookmarks")
       .withIndex("by_user_and_link", (q) => 
-        q.eq("userId", userId).eq("linkId", args.linkId)
+        q.eq("userId", authUserId).eq("linkId", args.linkId)
       )
       .unique();
     
@@ -186,7 +195,7 @@ export const toggleBookmark = mutation({
     } else {
       // Add bookmark
       await ctx.db.insert("bookmarks", {
-        userId,
+        userId: authUserId,
         linkId: args.linkId,
       });
       
@@ -210,12 +219,15 @@ export const isBookmarked = query({
   },
   returns: v.boolean(),
   handler: async (ctx, args) => {
-    const userId = "user123"; // TODO: Get from auth
+    const authUserId = await getAuthUserId({ auth: ctx.auth });
+    if (!authUserId) {
+      return false;
+    }
     
     const bookmark = await ctx.db
       .query("bookmarks")
       .withIndex("by_user_and_link", (q) => 
-        q.eq("userId", userId).eq("linkId", args.linkId)
+        q.eq("userId", authUserId).eq("linkId", args.linkId)
       )
       .unique();
     
@@ -232,13 +244,16 @@ export const updateReminder = mutation({
   },
   returns: v.null(),
   handler: async (ctx, args) => {
-    const userId = "user123"; // TODO: Get from auth
+    const authUserId = await getAuthUserId({ auth: ctx.auth });
+    if (!authUserId) {
+      throw new Error("Unauthorized: Must be logged in to update reminder");
+    }
     
     const link = await ctx.db.get(args.linkId);
     if (!link) throw new Error("Link not found");
     
     // Only owner can update reminder
-    if (link.userId !== userId) {
+    if (link.userId !== authUserId) {
       throw new Error("Unauthorized");
     }
     
@@ -276,14 +291,18 @@ export const getUpcomingReminders = query({
     })
   ),
   handler: async (ctx) => {
-    const userId = "user123"; // TODO: Get from auth
+    const authUserId = await getAuthUserId({ auth: ctx.auth });
+    if (!authUserId) {
+      return [];
+    }
+    
     const now = Date.now();
     const weekFromNow = now + (7 * 24 * 60 * 60 * 1000);
     
     const links = await ctx.db
       .query("links")
       .withIndex("by_reminder", (q) => 
-        q.eq("userId", userId).gte("reminderDate", now).lte("reminderDate", weekFromNow)
+        q.eq("userId", authUserId).gte("reminderDate", now).lte("reminderDate", weekFromNow)
       )
       .collect();
     

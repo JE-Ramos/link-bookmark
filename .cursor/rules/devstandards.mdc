@@ -1,0 +1,248 @@
+---
+alwaysApply: true
+---
+# Development Standards
+
+## Tech Stack
+- **Frontend**: Next.js 15 (App Router)
+- **Backend**: Convex.dev
+- **Authentication**: Clerk
+- **UI**: Tailwind CSS + Shadcn/ui
+- **Package Manager**: pnpm
+
+## Architecture Principles
+
+### 1. Server Components by Default
+- All `page.tsx` files should be Server Components
+- Add `"use client"` only when needed for interactivity
+- Server Components provide better performance and SEO
+
+### 2. Client/Server Component Separation
+
+#### Use Server Components for:
+- Initial data fetching
+- SEO-critical content
+- Static content rendering
+- Server-side authentication checks
+
+#### Use Client Components for:
+- Real-time data subscriptions
+- User interactions (forms, buttons, etc.)
+- Browser-only APIs
+- State management
+- Convex real-time queries
+
+### 3. Convex Integration Patterns
+
+#### Server Components (Non-reactive)
+```tsx
+import { fetchQuery, fetchMutation } from "convex/nextjs";
+import { api } from "@/convex/_generated/api";
+
+// One-time data fetch
+const data = await fetchQuery(api.items.list);
+```
+
+#### Client Components (Reactive)
+```tsx
+"use client";
+import { useQuery, useMutation } from "convex/react";
+import { api } from "@/convex/_generated/api";
+
+// Real-time reactive data
+const data = useQuery(api.items.list);
+const updateItem = useMutation(api.items.update);
+```
+
+#### Hybrid SSR Pattern (Recommended)
+Server Component:
+```tsx
+import { preloadQuery } from "convex/nextjs";
+import { ClientComponent } from "./ClientComponent";
+
+export async function ServerWrapper() {
+  const preloadedData = await preloadQuery(api.items.list);
+  return <ClientComponent preloadedData={preloadedData} />;
+}
+```
+
+Client Component:
+```tsx
+"use client";
+import { Preloaded, usePreloadedQuery } from "convex/react";
+
+export function ClientComponent({ 
+  preloadedData 
+}: { 
+  preloadedData: Preloaded<typeof api.items.list> 
+}) {
+  const data = usePreloadedQuery(preloadedData);
+  // Component has SSR data + real-time updates
+}
+```
+
+### 4. Authentication Patterns
+
+#### Server-side Authentication
+```tsx
+import { auth } from "@clerk/nextjs/server";
+
+async function getAuthToken() {
+  return (await auth()).getToken({ template: "convex" }) ?? undefined;
+}
+
+// Use in server components
+const token = await getAuthToken();
+const data = await fetchQuery(api.protected.data, {}, { token });
+```
+
+#### Client-side Authentication
+- Handled automatically by `ConvexProviderWithClerk`
+- Use `useAuth()` hook from Clerk in client components
+
+### 5. File Structure
+```
+app/
+├── (main)/                  # Route group for main features
+│   ├── layout.tsx          # Shared layout (Server Component)
+│   ├── [feature]/          # Feature folder
+│   │   ├── page.tsx        # Server Component
+│   │   └── components/     # Client Components
+├── (auth)/                 # Route group for auth pages
+├── api/                    # API routes if needed
+└── [page].tsx             # Root pages
+```
+
+### 6. Data Fetching Best Practices
+
+1. **Prefer `preloadQuery` for initial page data**
+   - Provides SSR benefits
+   - Maintains reactivity after load
+
+2. **Use `fetchQuery` for server-only data**
+   - Admin checks
+   - One-time calculations
+   - Non-reactive data
+
+3. **Avoid multiple preloadQuery calls**
+   - Can cause consistency issues
+   - Combine into single query when possible
+
+### 7. Convex Schema Best Practices
+
+1. **Always define validators**
+```tsx
+export const createItem = mutation({
+  args: {
+    title: v.string(),
+    description: v.optional(v.string()),
+  },
+  handler: async (ctx, args) => {
+    // Implementation
+  },
+});
+```
+
+2. **Use internal functions for server-side operations**
+```tsx
+export const publicMutation = mutation({
+  handler: async (ctx, args) => {
+    // Validate permissions
+    await ctx.runMutation(internal.items.create, args);
+  },
+});
+```
+
+3. **Implement access control**
+```tsx
+handler: async (ctx, args) => {
+  const identity = await ctx.auth.getUserIdentity();
+  if (!identity) throw new Error("Unauthorized");
+  // Continue with operation
+}
+```
+
+### 8. Performance Guidelines
+
+1. **Minimize Client Component JavaScript**
+   - Extract static parts to Server Components
+   - Use dynamic imports for heavy components
+
+2. **Optimize Convex Queries**
+   - Use indexes for filtered queries
+   - Limit results with `.take()`
+   - Avoid `.collect()` on large datasets
+
+3. **Image Optimization**
+   - Use Next.js Image component
+   - Store images in Convex File Storage
+   - Implement proper loading states
+
+### 9. Error Handling
+
+1. **Server Components**
+   - Use error.tsx for error boundaries
+   - Implement proper try-catch blocks
+
+2. **Client Components**
+   - Use React Error Boundaries
+   - Show user-friendly error messages
+
+3. **Convex Functions**
+   - Always validate inputs
+   - Return meaningful error messages
+   - Use proper HTTP status codes for HTTP actions
+
+### 10. Testing Strategy
+
+1. **Component Testing**
+   - Test Client Components with React Testing Library
+   - Mock Convex hooks for unit tests
+
+2. **Convex Function Testing**
+   - Use Convex testing utilities
+   - Test validators and business logic
+
+3. **E2E Testing**
+   - Test critical user flows
+   - Include authentication flows
+
+## Code Style
+
+1. **TypeScript**
+   - Strict mode enabled
+   - No `any` types
+   - Proper type imports
+
+2. **Imports**
+   - Group imports: React, Next, External, Internal, Types
+   - Use absolute imports with `@/` prefix
+
+3. **Component Structure**
+   - Props interface above component
+   - Hooks at the top
+   - Early returns for loading/error states
+   - Main render at the bottom
+
+## Environment Variables
+
+```env
+# Public (exposed to client)
+NEXT_PUBLIC_CONVEX_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+
+# Server-only
+CLERK_SECRET_KEY=
+CONVEX_DEPLOY_KEY=
+```
+
+## Deployment Checklist
+
+- [ ] All TypeScript errors resolved
+- [ ] Environment variables configured
+- [ ] Convex schema deployed
+- [ ] Authentication configured
+- [ ] Error tracking setup
+- [ ] Performance monitoring enabled
+- [ ] SEO metadata added
+- [ ] Accessibility audit passed 

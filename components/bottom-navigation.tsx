@@ -2,28 +2,25 @@
 
 import { Home, Bookmark, User } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-type Tab = "explore" | "collection" | "profile";
+export function BottomNavigation() {
+  const pathname = usePathname();
 
-interface BottomNavigationProps {
-  activeTab: Tab;
-  onTabChange: (tab: Tab) => void;
-}
-
-export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationProps) {
   const tabs = [
     {
-      id: "explore" as Tab,
+      href: "/explore",
       label: "Explore",
       icon: Home,
     },
     {
-      id: "collection" as Tab,
-      label: "Collection",
+      href: "/bookmarks",
+      label: "Bookmarks",
       icon: Bookmark,
     },
     {
-      id: "profile" as Tab,
+      href: "/profile",
       label: "Profile",
       icon: User,
     },
@@ -34,13 +31,13 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
       <div className="mx-auto max-w-screen-xl">
         <div className="grid grid-cols-3 h-16">
           {tabs.map((tab) => {
-            const isActive = activeTab === tab.id;
+            const isActive = pathname === tab.href;
             const Icon = tab.icon;
             
             return (
-              <button
-                key={tab.id}
-                onClick={() => onTabChange(tab.id)}
+              <Link
+                key={tab.href}
+                href={tab.href}
                 className={cn(
                   "inline-flex flex-col items-center justify-center gap-1 transition-all duration-300",
                   "hover:bg-black/5 dark:hover:bg-white/5",
@@ -82,7 +79,7 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
                 >
                   {tab.label}
                 </span>
-              </button>
+              </Link>
             );
           })}
         </div>

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Link Bookmark - Save & Track Product Deals",
   description: "Save and track product links from your favorite e-commerce platforms. Get price alerts and never miss a deal.",
-  keywords: "bookmark, deals, price tracking, shopee, lazada, tiktok shop",
+  keywords: "bookmark, deals, price tracking, save links",
   authors: [{ name: "Link Bookmark Team" }],
   icons: {
     icon: "/convex.svg",
