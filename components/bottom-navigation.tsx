@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Bookmark, User } from "lucide-react";
+import { Home, Bookmark, User, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -20,6 +20,11 @@ export function BottomNavigation() {
       icon: Bookmark,
     },
     {
+      href: "/demo",
+      label: "Demo",
+      icon: Sparkles,
+    },
+    {
       href: "/profile",
       label: "Profile",
       icon: User,
@@ -29,7 +34,7 @@ export function BottomNavigation() {
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-50 glass-effect-strong border-t border-white/10 dark:border-white/10">
       <div className="mx-auto max-w-screen-xl">
-        <div className="grid grid-cols-3 h-16">
+        <div className="grid grid-cols-4 h-16">
           {tabs.map((tab) => {
             const isActive = pathname === tab.href;
             const Icon = tab.icon;
