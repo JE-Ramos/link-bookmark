@@ -1,0 +1,4 @@
+---
+alwaysApply: true
+---
+do not run pnpm dev automatically, assume the user is already running it so just show the command
