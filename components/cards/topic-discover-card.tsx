@@ -6,21 +6,25 @@ import { Button } from "@/components/ui/button";
 import { useQuery, useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { 
+  ExternalLink, 
+  Facebook, 
+  Twitter, 
+  Youtube, 
+  Linkedin,
   Link2,
   ArrowRight,
   Bookmark,
   Heart,
   MessageCircle,
 } from "lucide-react";
-import Image from "next/image";
+import Link from "next/link";
 
 interface TopicDiscoverCardProps {
   topic: NonNullable<ReturnType<typeof useQuery<typeof api.topics.getPublicTopics>>>[0];
-  highlight?: string;
   className?: string;
 }
 
-export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscoverCardProps) {
+export function TopicDiscoverCard({ topic, className }: TopicDiscoverCardProps) {
   const toggleBookmark = useMutation(api.topics.toggleBookmark);
   const toggleLike = useMutation(api.topics.toggleLike);
   
@@ -58,14 +62,12 @@ export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscover
 
   return (
     <div className={cn("relative overflow-hidden rounded-2xl bg-card", className)}>
-      {/* Image Container - 3:4 Aspect Ratio (portrait) */}
-      <div className="relative aspect-[3/4]">
-        <Image 
+      {/* Image Container - Square Aspect Ratio */}
+      <div className="relative aspect-square">
+        <img 
           src={topicImage} 
           alt={topic.title}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="absolute inset-0 h-full w-full object-cover"
         />
         
         {/* Tags Overlay */}
@@ -95,19 +97,7 @@ export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscover
       {/* Content Section */}
       <div className="p-6 space-y-4">
         {/* Title */}
-        <h3 className="text-2xl font-bold tracking-tight line-clamp-2">{topic.title}</h3>
-        
-        {/* Highlight - computed or passed as prop */}
-        {(highlight || topic.isTrending) && (
-          <div className="inline-flex">
-            <Badge 
-              variant="secondary" 
-              className="rounded-full px-3 py-0.5 text-xs font-semibold"
-            >
-              {highlight || "TRENDING"}
-            </Badge>
-          </div>
-        )}
+        <h3 className="text-2xl font-bold tracking-tight">{topic.title}</h3>
         
         {/* Description */}
         <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
@@ -127,7 +117,6 @@ export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscover
               >
                 <span className="flex items-center gap-2">
                   {link.favicon && (
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img src={link.favicon} alt="" className="h-4 w-4" />
                   )}
                   {link.title}
@@ -167,7 +156,6 @@ export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscover
                   className="p-2 rounded-lg hover:bg-muted transition-colors"
                 >
                   {link.favicon ? (
-                    // eslint-disable-next-line @next/next/no-img-element
                     <img src={link.favicon} alt="" className="h-4 w-4" />
                   ) : (
                     <Link2 className="h-4 w-4 text-muted-foreground" />
@@ -190,11 +178,11 @@ export function TopicDiscoverCard({ topic, highlight, className }: TopicDiscover
 // Helper function to generate placeholder images based on topic title
 function getTopicPlaceholderImage(title: string): string {
   const images = [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=800&fit=crop", // Ocean depth
-    "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&h=800&fit=crop", // Neon lights
-    "https://images.unsplash.com/photo-1569163139394-de4798aa62b6?w=600&h=800&fit=crop", // City perspective
-    "https://images.unsplash.com/photo-1557800636-894a64c1696f?w=600&h=800&fit=crop", // Colorful abstract
-    "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=800&fit=crop", // Urban sunset
+    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop", // Tech
+    "https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=600&h=600&fit=crop", // Shopping
+    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop", // Design
+    "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=600&h=600&fit=crop", // Productivity
+    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=600&h=600&fit=crop", // Office
   ];
   
   // Use title hash to consistently pick same image for same topic

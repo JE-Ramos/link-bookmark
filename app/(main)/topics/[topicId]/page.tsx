@@ -1,0 +1,23 @@
+import { Metadata } from "next";
+import { TopicDetail } from "./components/topic-detail";
+import { AppHeader } from "@/components/shared/app-header";
+
+export const metadata: Metadata = {
+  title: "Topic Details | Link Bookmark",
+  description: "Explore curated links and resources for this topic",
+};
+
+export default function TopicDetailPage({
+  params,
+}: {
+  params: { topicId: string };
+}) {
+  return (
+    <>
+      <AppHeader title="Topic Details" />
+      <main className="container mx-auto px-4 py-6 pb-20">
+        <TopicDetail topicId={params.topicId} />
+      </main>
+    </>
+  );
+}

@@ -2,7 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
+  ExternalLink, 
   Facebook, 
   Twitter, 
   Youtube, 
@@ -11,7 +13,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 
 interface OfficialLink {
   title: string;
@@ -30,7 +31,6 @@ interface DiscoverCardProps {
   tags: string[];
   officialLinks: OfficialLink[]; // Max 2
   socialLinks?: SocialLink[];
-  highlight?: string;
   className?: string;
 }
 
@@ -49,45 +49,23 @@ export function DiscoverCard({
   tags,
   officialLinks,
   socialLinks = [],
-  highlight,
   className,
 }: DiscoverCardProps) {
   // Ensure max 2 official links
   const displayOfficialLinks = officialLinks.slice(0, 2);
-  const [imageError, setImageError] = useState(false);
 
   return (
     <div className={cn("relative overflow-hidden rounded-xl bg-card border shadow-sm hover:shadow-md transition-shadow", className)}>
-      {/* Image Container - 3:4 Aspect Ratio (portrait) */}
-      <div className="relative aspect-[3/4] overflow-hidden">
-        {/* Gradient background fallback */}
-        <div className={cn(
-          "absolute inset-0",
-          !imageError && "bg-gradient-to-br from-slate-300 to-slate-400 dark:from-slate-700 dark:to-slate-800"
-        )} />
-        
-        {!imageError && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img 
-            src={image} 
-            alt={title}
-            className="absolute inset-0 h-full w-full object-cover z-10"
-            loading="eager"
-            onError={() => {
-              console.error('Image failed to load:', image);
-              setImageError(true);
-            }}
-          />
-        )}
-        
-        {imageError && (
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-300 to-slate-400 dark:from-slate-700 dark:to-slate-800 flex items-center justify-center">
-            <span className="text-slate-600 dark:text-slate-300 font-medium">Image unavailable</span>
-          </div>
-        )}
+      {/* Image Container - 16:10 Aspect Ratio (more reasonable height) */}
+      <div className="relative aspect-[16/10]">
+        <img 
+          src={image} 
+          alt={title}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
         
         {/* Tags Overlay */}
-        <div className="absolute top-4 left-4 flex gap-2 z-20">
+        <div className="absolute top-4 left-4 flex gap-2">
           {tags.map((tag, idx) => (
             <Badge 
               key={idx}
@@ -103,19 +81,7 @@ export function DiscoverCard({
       {/* Content Section */}
       <div className="p-6 space-y-4">
         {/* Title */}
-        <h3 className="text-2xl font-bold tracking-tight line-clamp-2">{title}</h3>
-        
-        {/* Highlight */}
-        {highlight && (
-          <div className="inline-flex">
-            <Badge 
-              variant="secondary" 
-              className="rounded-full px-3 py-0.5 text-xs font-semibold"
-            >
-              {highlight}
-            </Badge>
-          </div>
-        )}
+        <h3 className="text-2xl font-bold tracking-tight">{title}</h3>
         
         {/* Description */}
         <p className="text-muted-foreground text-sm leading-relaxed">

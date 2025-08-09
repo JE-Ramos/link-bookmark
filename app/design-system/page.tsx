@@ -26,12 +26,12 @@ export default function DesignSystemPage() {
             <div>
               <h3 className="text-lg font-medium mb-4">Discover Card</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Example 1 - Mountain Landscape */}
+                {/* Example 1 - Design & Illustration */}
                 <DiscoverCard
-                  title="Immersive Mountain Experience: Explore Switzerland's Alpine Peaks in Stunning Detail"
-                  description="Capture the breathtaking beauty of snow-capped mountains with layers of depth perfect for 3D conversion."
-                  image="https://picsum.photos/600/800?random=1"
-                  tags={["Nature", "Landscape"]}
+                  title="Professional Design Resources: A Comprehensive Collection of Premium Templates, Tools, and Illustrations for Modern Creatives"
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod."
+                  image="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=800&fit=crop"
+                  tags={["Design", "Illustration"]}
                   highlight="$49.99"
                   officialLinks={[
                     { title: "View more", url: "#" }
@@ -44,12 +44,12 @@ export default function DesignSystemPage() {
                   ]}
                 />
 
-                {/* Example 2 - Abstract Art */}
+                {/* Example 2 - Product Launch */}
                 <DiscoverCard
-                  title="3D Abstract Geometry"
-                  description="Dive into a world of dimensional shapes and vibrant gradients designed for immersive viewing experiences."
-                  image="https://picsum.photos/600/800?random=2"
-                  tags={["3D Art", "Digital"]}
+                  title="New Product Launch"
+                  description="Introducing our latest innovation in smart home technology. Experience the future of connected living."
+                  image="https://images.unsplash.com/photo-1468495244123-6c6c332eeece?w=600&h=800&fit=crop"
+                  tags={["Tech", "Innovation"]}
                   highlight="✨ NEW"
                   officialLinks={[
                     { title: "Learn more", url: "#" },
@@ -61,12 +61,12 @@ export default function DesignSystemPage() {
                   ]}
                 />
 
-                {/* Example 3 - Atmospheric Background */}
+                {/* Example 3 - Art Exhibition */}
                 <DiscoverCard
-                  title="Ethereal Cloudscapes"
-                  description="Experience atmospheric depth with layered clouds and dramatic lighting perfect for immersive backgrounds."
-                  image="https://picsum.photos/600/800?random=3"
-                  tags={["Atmosphere", "Sky", "Clouds"]}
+                  title="Contemporary Art"
+                  description="Explore the boundaries of modern artistic expression through our curated collection."
+                  image="https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=600&h=800&fit=crop"
+                  tags={["Art", "Gallery", "Exhibition"]}
                   highlight="Free Entry"
                   officialLinks={[
                     { title: "Visit gallery", url: "#" }
@@ -77,12 +77,12 @@ export default function DesignSystemPage() {
                   ]}
                 />
                 
-                {/* Example 4 - Architectural Depth */}
+                {/* Example 4 - Without Highlight */}
                 <DiscoverCard
-                  title="Urban Architecture"
-                  description="Discover the depth and perspective of modern cityscapes with strong geometric lines and vanishing points."
-                  image="https://picsum.photos/600/800?random=4"
-                  tags={["Architecture", "Urban"]}
+                  title="Photography Workshop"
+                  description="Master the art of visual storytelling through hands-on training with industry professionals."
+                  image="https://images.unsplash.com/photo-1606986628025-35d57e735ae0?w=600&h=800&fit=crop"
+                  tags={["Photography", "Workshop"]}
                   officialLinks={[
                     { title: "Register now", url: "#" },
                     { title: "View curriculum", url: "#" }
@@ -112,42 +112,6 @@ export default function DesignSystemPage() {
                 </div>
               )}
               
-              {/* Test with base64 image */}
-              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-                <h4 className="font-medium mb-2">Image Loading Test</h4>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Testing with different image sources:
-                </p>
-                <div className="grid grid-cols-3 gap-4">
-                  <div>
-                    <p className="text-xs font-medium mb-2">CSS Gradient</p>
-                    <div className="relative aspect-[3/4] w-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-lg">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-white text-xs font-bold">CSS</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium mb-2">Local SVG</p>
-                    <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/placeholder-image.svg" alt="Local SVG" className="absolute inset-0 h-full w-full object-cover" />
-                    </div>
-                  </div>
-                  <div>
-                    <p className="text-xs font-medium mb-2">External Image</p>
-                    <div className="relative aspect-[3/4] w-full rounded-lg overflow-hidden">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="https://via.placeholder.com/300x400" alt="External" className="absolute inset-0 h-full w-full object-cover" />
-                    </div>
-                  </div>
-                </div>
-                <p className="text-xs text-muted-foreground mt-4">
-                  Check browser console (F12) for any image loading errors. If external images don&apos;t load, 
-                  it may be due to Content Security Policy or network restrictions.
-                </p>
-              </div>
-              
               {/* Highlight Feature Note */}
               <div className="mt-6 p-4 bg-muted/50 rounded-lg">
                 <h4 className="font-medium mb-2">Highlight Feature</h4>
@@ -164,27 +128,6 @@ export default function DesignSystemPage() {
                 <p className="text-sm text-muted-foreground mt-3">
                   <strong>Note:</strong> For topics, highlights could be computed based on properties (e.g., &ldquo;TRENDING&rdquo; for 
                   isTrending topics) or added to the schema for custom values.
-                </p>
-              </div>
-              
-              {/* Immersive Images Note */}
-              <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-                <h4 className="font-medium mb-2">Immersive Images for Prototyping</h4>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Based on insights from <a href="https://www.immersity.ai" className="text-primary hover:underline">Immersity.ai</a> and prototyping best practices, 
-                  ideal immersive images should have:
-                </p>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• <strong>Depth layers:</strong> Multiple planes (foreground, midground, background) for 3D conversion potential</li>
-                  <li>• <strong>Natural perspective:</strong> Images with clear vanishing points or depth cues</li>
-                  <li>• <strong>Motion potential:</strong> Scenes that would benefit from camera movement (dolly, zoom, pan)</li>
-                  <li>• <strong>Portrait orientation:</strong> 3:4 ratio works well for mobile and immersive experiences</li>
-                  <li>• <strong>High contrast elements:</strong> Clear subject separation for depth mapping</li>
-                </ul>
-                <p className="text-sm text-muted-foreground mt-3">
-                  <strong>Resources:</strong> Unsplash provides high-quality images suitable for prototyping. For production, consider 
-                  using <a href="https://www.immersity.ai" className="text-primary hover:underline">Immersity.ai</a> to convert 2D images 
-                  into 3D experiences for Apple Vision Pro and Meta Quest.
                 </p>
               </div>
             </div>
