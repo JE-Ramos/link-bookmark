@@ -57,9 +57,34 @@ export function ProductCard({
 }: ProductCardProps) {
   const formatPrice = (priceValue: string) => {
     const num = parseFloat(priceValue);
+    
+    // Map currency symbols to proper ISO codes
+    const currencyMap: { [key: string]: string } = {
+      '$': 'USD',
+      '€': 'EUR',
+      '£': 'GBP',
+      '¥': 'JPY',
+      '₹': 'INR',
+      '₽': 'RUB',
+      '₩': 'KRW',
+      '¢': 'USD', // cents
+      '₱': 'PHP',
+    };
+    
+    // Use mapped currency or original if it's already a valid ISO code
+    const validCurrency = currencyMap[currency] || currency;
+    
+    // Fallback to USD if currency is still invalid
+    let finalCurrency = validCurrency;
+    try {
+      new Intl.NumberFormat('en-US', { style: 'currency', currency: validCurrency });
+    } catch {
+      finalCurrency = 'USD';
+    }
+    
     return new Intl.NumberFormat('en-US', {
       style: 'currency',
-      currency: currency,
+      currency: finalCurrency,
     }).format(num);
   };
 

@@ -66,4 +66,72 @@ export default defineSchema({
     .index("by_clerk_id", ["clerkId"])
     .index("by_email", ["email"])
     .index("by_admin", ["isAdmin"]),
+    
+  // Topics - collections of links with primary/supporting structure
+  topics: defineTable({
+    // Topic information
+    title: v.string(),
+    description: v.string(),
+    image: v.optional(v.string()), // Cover image for the topic
+    
+    // Author
+    userId: v.string(),
+    
+    // Tags for categorization
+    tags: v.array(v.string()),
+    
+    // Visibility
+    isPublic: v.boolean(),
+    
+    // Stats
+    viewCount: v.number(),
+    likeCount: v.number(),
+    commentCount: v.number(),
+    bookmarkCount: v.number(),
+    
+    // Trending indicator (can be calculated or manually set)
+    isTrending: v.boolean(),
+  })
+    .index("by_user", ["userId"])
+    .index("by_public", ["isPublic"])
+    .index("by_trending", ["isTrending", "isPublic"])
+    .searchIndex("search_title", {
+      searchField: "title",
+      filterFields: ["isPublic", "userId"],
+    }),
+    
+  // Topic links - links associated with topics
+  topicLinks: defineTable({
+    topicId: v.id("topics"),
+    linkId: v.id("links"),
+    
+    // Link type within the topic
+    linkType: v.union(v.literal("primary"), v.literal("supporting")),
+    
+    // Order within its type (0-2 for primary, 0+ for supporting)
+    order: v.number(),
+    
+    // Optional caption/note for this link in this topic context
+    caption: v.optional(v.string()),
+  })
+    .index("by_topic", ["topicId"])
+    .index("by_link", ["linkId"])
+    .index("by_topic_and_type", ["topicId", "linkType", "order"]),
+    
+  // Topic engagement
+  topicLikes: defineTable({
+    userId: v.string(),
+    topicId: v.id("topics"),
+  })
+    .index("by_user", ["userId"])
+    .index("by_topic", ["topicId"])
+    .index("by_user_and_topic", ["userId", "topicId"]),
+    
+  topicBookmarks: defineTable({
+    userId: v.string(),
+    topicId: v.id("topics"),
+  })
+    .index("by_user", ["userId"])
+    .index("by_topic", ["topicId"])
+    .index("by_user_and_topic", ["userId", "topicId"]),
 });

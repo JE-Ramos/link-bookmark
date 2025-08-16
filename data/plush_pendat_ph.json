@@ -1,0 +1,1219 @@
+{
+    "total": 85,
+    "id": 146,
+    "name": "Plush toys",
+    "desc": "",
+    "mainImage": "",
+    "productData": [
+      {
+        "id": "5631",
+        "title": "Hirono Living Wild-Fight for Joy Plush Doll",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250624_113916_900182____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250624_113915_934013____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250624_113916_532438____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250624_113916_470553____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250624_113915_024909____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250624_113916_462975____6_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1750989600,
+        "skus": [
+          {
+            "id": "8548",
+            "price": 147000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 147000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "Hirono Living Wild-Fight for Joy Plush Doll",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "5598",
+        "title": "THE MONSTERS Big into Energy Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_954253____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_325120____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_427360____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_592227____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_967169____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_284240____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250422_091913_429614____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1751443200,
+        "sendTime": 1757865600,
+        "skus": [
+          {
+            "id": "8500",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "8501",
+            "price": 540000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 540000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "5543",
+        "title": "HACIPUPU Gummy Bear Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_729349____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_609501____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_320504____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_579254____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_099463____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_550328____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250617_105901_311691____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1750384800,
+        "skus": [
+          {
+            "id": "8423",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "8424",
+            "price": 540000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 540000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3856",
+        "title": "SKULLPANDA L’impressionnisme Series Plush Doll",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_788862____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_376913____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_093749____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_438053____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_650447____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_435260____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_950103____7_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250530_144734_076690____8_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1749175200,
+        "skus": [
+          {
+            "id": "5740",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5741",
+            "price": 1035000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 1035000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3845",
+        "title": "SKULLPANDA L’impressionnisme Series Plush Doll",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250530_113937_158253____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1749175200,
+        "skus": [
+          {
+            "id": "5724",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 127,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3769",
+        "title": "DIMOO WORLD × DISNEY Series-Vinyl Plush Keychain Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_777516____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_487043____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_937723____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_781239____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_097400____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_570900____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250318_111934_165460____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1747620000,
+        "skus": [
+          {
+            "id": "5606",
+            "price": 147000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 147000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5607",
+            "price": 882000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 882000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3753",
+        "title": "Baby Molly Pocket Friends Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250519_142611_490100____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1747965600,
+        "skus": [
+          {
+            "id": "5584",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 118,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3737",
+        "title": "Baby Molly Pocket Friends Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_000101____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_343585____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_709462____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_958780____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_368854____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_816209____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_519491____7_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250520_172250_637176____8_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1747965600,
+        "skus": [
+          {
+            "id": "5556",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5557",
+            "price": 420000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 420000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3700",
+        "title": "CRYBABY Wild but Cutie Series - Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250513_091830_506976____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1747360800,
+        "skus": [
+          {
+            "id": "5491",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 111,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3686",
+        "title": "CRYBABY Wild but Cutie Series - Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_870769____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_811311____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_643164____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_752222____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_654209____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_390280____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250512_155750_523654____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1747360800,
+        "skus": [
+          {
+            "id": "5474",
+            "price": 70000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 70000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5519",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5518",
+            "price": 130000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 130000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5475",
+            "price": 420000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 420000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3674",
+        "title": "Bikini Bottom Buddies - Whimsical Plush",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_772256____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_838125____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_901507____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_866610____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094525_659101____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_834496____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250513_094524_868189____7_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1747360800,
+        "skus": [
+          {
+            "id": "5455",
+            "price": 55000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 55000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5456",
+            "price": 330000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 330000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3672",
+        "title": "INSTINCTOY HUG YOU SERIES-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250508_173152_875950____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1746756000,
+        "skus": [
+          {
+            "id": "5453",
+            "price": 60000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 60000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": true,
+        "spuExtID": 110,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "3653",
+        "title": "INSTINCTOY HUG YOU SERIES-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250507_140608_775365____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250507_140609_680218____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250507_140609_942932____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250507_140609_869312____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250507_140609_380452____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250507_140609_804979____6_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1746756000,
+        "skus": [
+          {
+            "id": "5430",
+            "price": 60000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 60000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "5431",
+            "price": 360000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 360000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": true,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "2011",
+        "title": "THE MONSTERS Big into Energy Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250423_165927_770656____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1751268600,
+        "sendTime": 1758729600,
+        "skus": [
+          {
+            "id": "2961",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "AppOnly",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 100,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1969",
+        "title": "Twinkle Twinkle Be a Little Star Series - Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250417_091604_821680____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1744941600,
+        "skus": [
+          {
+            "id": "2890",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 96,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1968",
+        "title": "Twinkle Twinkle Be a Little Star Series - Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_298919____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_024976____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_687829____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_397553____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_717731____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250416_173926_044115____6_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1744941600,
+        "skus": [
+          {
+            "id": "2885",
+            "price": 90000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 90000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2886",
+            "price": 540000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 540000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1947",
+        "title": "CRYBABY CHEER UP, BABY! SERIES-Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20240725_140640_750985____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1744336800,
+        "skus": [
+          {
+            "id": "2856",
+            "price": 60000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 60000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 95,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1944",
+        "title": "Baby Molly × Pingu Happy Fishing Series-Vinyl Plush Pendant Blind Box",
+        "subTitle": "POP MART",
+        "type": "secret",
+        "isNew": true,
+        "bannerImages": [
+          "https://prod-thailand-res.popmart.com/default/20241205_170851_658429____list_pic_____800x800.png"
+        ],
+        "isPublish": true,
+        "upTime": 1744336800,
+        "skus": [
+          {
+            "id": "2853",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 92,
+        "expressType": "crossBoard",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1940",
+        "title": "CRYBABY Crying For Love Series-Vinyl Plush Hanging Card (Love You Cherry Much)",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "isHot": true,
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20250120_171923_484649____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250120_171923_303789____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250120_171923_589116____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20250120_171923_913604____4_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1744250400,
+        "skus": [
+          {
+            "id": "2849",
+            "price": 170000,
+            "stock": {
+              "onlineStock": 0,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 170000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      },
+      {
+        "id": "1901",
+        "title": "SKULLPANDA Winter Symphony Series Plush",
+        "subTitle": "POP MART",
+        "type": "normal",
+        "bannerImages": [
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_458431____1_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_007328____2_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_396731____3_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_591915____4_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_063850____5_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_869489____6_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_495794____7_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_435386____8_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_158586____9_____1200x1200.jpg",
+          "https://prod-eurasian-res.popmart.com/default/20241204_104538_942503____10_____1200x1200.jpg"
+        ],
+        "isPublish": true,
+        "upTime": 1743661800,
+        "skus": [
+          {
+            "id": "2797",
+            "price": 115000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 115000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          },
+          {
+            "id": "2798",
+            "price": 690000,
+            "stock": {
+              "onlineStock": 1,
+              "onlineLockStock": 0
+            },
+            "limitQuantity": 0,
+            "purchasedQuantity": 0,
+            "platform": "all",
+            "specCount": 0,
+            "wishListID": 0,
+            "subscribeRestocking": false,
+            "subscribeAvailableForSale": false,
+            "discountPrice": 690000,
+            "currency": "PHP",
+            "wholeSetAvailable": false,
+            "expectedArrivalTime": 0,
+            "isSkuSoldOut": false,
+            "wholeSetCount": 0,
+            "isSubscribedReplenishment": false
+          }
+        ],
+        "qualify": false,
+        "spuExtID": 0,
+        "expressType": "default",
+        "jumpType": 0,
+        "jumpUrl": "",
+        "itemType": 0,
+        "HotSubTitle": "",
+        "NewCalendarImage": ""
+      }
+    ]
+  }

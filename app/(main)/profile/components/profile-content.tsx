@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Settings, LogOut, Package, Heart, Clock, Shield } from "lucide-react";
 import Link from "next/link";
+import packageJson from "@/package.json";
 
 export function ProfileContent() {
   const { user } = useUser();
@@ -115,8 +116,8 @@ export function ProfileContent() {
 
       {/* Footer Info */}
       <div className="text-center text-xs text-gray-500 dark:text-gray-400 pt-4">
-        <p>Version 1.0.0</p>
-        <p className="mt-1">© 2024 Link Bookmark</p>
+        <p>Version {packageJson.version}</p>
+        <p className="mt-1">© {new Date().getFullYear()} {packageJson.name.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}</p>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import { AppHeader } from "@/components/shared/app-header";
 import { BookmarksCollection } from "./components/bookmarks-collection";
+import { BRAND_NAME } from "@/lib/constants/brand";
 
 export const metadata: Metadata = {
-  title: "Bookmarks | Link Bookmark",
+  title: `Bookmarks | ${BRAND_NAME}`,
   description: "Your saved product links and deals",
 };
 

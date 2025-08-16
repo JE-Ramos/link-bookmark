@@ -1,96 +1,104 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useQuery, useMutation } from "convex/react";
+import { useState } from "react";
+import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
-import { ProductLinkCard } from "@/components/product-link-card";
-import { Id } from "@/convex/_generated/dataModel";
-import { useSearchParams } from "next/navigation";
+import { LinkPreview } from "@/components/link-preview/LinkPreview";
+import { LinkPreviewModal } from "@/components/link-preview/LinkPreviewModal";
+import { SharedViewTransition } from "@/components/link-preview/SharedViewTransition";
+import { viewTransitionStyles } from "@/components/link-preview/SharedViewTransition";
+import { detectLinkType } from "@/lib/link-type-detector";
+import { Loader2 } from "lucide-react";
+
+type LinkType = NonNullable<ReturnType<typeof useQuery<typeof api.links.getPublicLinks>>>[0];
 
 export function ExploreFeed() {
-  const searchParams = useSearchParams();
-  const platform = searchParams.get("platform") || undefined;
-  
-  const [bookmarkedLinks, setBookmarkedLinks] = useState<Set<Id<"links">>>(new Set());
-  
-  // Queries
-  const publicLinks = useQuery(api.links.getPublicLinks, { platform });
-  const userCollection = useQuery(api.links.getUserCollection, {});
-  
-  // Mutations
-  const toggleBookmark = useMutation(api.links.toggleBookmark);
+  const links = useQuery(api.links.getPublicLinks, {});
+  const [selectedLink, setSelectedLink] = useState<LinkType | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Track bookmarked links
-  useEffect(() => {
-    if (userCollection) {
-      const bookmarked = new Set(userCollection.map(item => item.link._id));
-      setBookmarkedLinks(bookmarked);
-    }
-  }, [userCollection]);
+  if (links === undefined) {
+    return (
+      <div className="flex items-center justify-center p-8">
+        <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
+      </div>
+    );
+  }
 
-  const handleBookmark = async (linkId: Id<"links">) => {
-    try {
-      const isBookmarked = await toggleBookmark({ linkId });
-      setBookmarkedLinks(prev => {
-        const next = new Set(prev);
-        if (isBookmarked) {
-          next.add(linkId);
-        } else {
-          next.delete(linkId);
-        }
-        return next;
-      });
-    } catch (error) {
-      console.error("Failed to toggle bookmark:", error);
-    }
+  if (links.length === 0) {
+    return (
+      <div className="text-center p-8">
+        <p className="text-muted-foreground">No links to explore yet.</p>
+      </div>
+    );
+  }
+
+  const handleLinkClick = (link: typeof links[0]) => {
+    setSelectedLink(link);
+    setIsModalOpen(true);
   };
 
-  if (!publicLinks) {
-    return (
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {[...Array(10)].map((_, i) => (
-          <div
-            key={i}
-            className="animate-pulse bg-gray-200 dark:bg-gray-800 rounded-lg h-64"
-          />
-        ))}
-      </div>
-    );
-  }
-
-  if (publicLinks.length === 0) {
-    return (
-      <div className="text-center py-12">
-        <p className="text-gray-500 dark:text-gray-400 mb-2">No links found</p>
-        <p className="text-sm text-gray-400 dark:text-gray-500">
-          {platform ? `No links available for ${platform}` : "Be the first to add a link!"}
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-      {publicLinks.map((link) => (
-        <div
-          key={link._id}
-          className="animate-in fade-in slide-in-from-bottom-2 duration-300"
-        >
-          <ProductLinkCard
-            id={link._id}
-            title={link.title}
-            url={link.url}
-            image={link.image}
-            price={link.price}
-            originalPrice={link.originalPrice}
-            currency={link.currency}
-            platform={link.platform}
-            bookmarkCount={link.bookmarkCount}
-            isBookmarked={bookmarkedLinks.has(link._id)}
-            onBookmark={() => handleBookmark(link._id)}
-          />
-        </div>
-      ))}
-    </div>
+    <>
+      {/* Inject view transition styles */}
+      <style dangerouslySetInnerHTML={{ __html: viewTransitionStyles }} />
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 pb-20">
+        {links.map((link) => {
+          const linkType = detectLinkType(link.url);
+          
+          return (
+            <SharedViewTransition
+              key={link._id}
+              href={`/bookmarks/${link._id}`}
+              viewTransitionName={`card-${link._id}`}
+              onClick={() => handleLinkClick(link)}
+              className="cursor-pointer transform transition-transform hover:scale-105"
+            >
+              <LinkPreview
+                data={{
+                  url: link.url,
+                  title: link.title,
+                  description: link.description,
+                  image: link.image,
+                  type: linkType,
+                  price: link.price,
+                  originalPrice: link.originalPrice,
+                  currency: link.currency,
+                  siteName: link.platform,
+                }}
+                isBookmarked={false} // We'll need to query this separately
+                onBookmark={() => {
+                  // Handle bookmark action
+                  console.log("Bookmark", link._id);
+                }}
+              />
+            </SharedViewTransition>
+          );
+        })}
+      </div>
+
+      {/* Link Preview Modal */}
+      {selectedLink && (
+        <LinkPreviewModal
+          open={isModalOpen}
+          onOpenChange={setIsModalOpen}
+          url={selectedLink.url}
+          title={selectedLink.title}
+          description={selectedLink.description}
+          imageUrl={selectedLink.image}
+          linkType={detectLinkType(selectedLink.url)}
+          price={selectedLink.price}
+          onBookmark={() => {
+            // Handle bookmark action in modal
+            console.log("Bookmark from modal", selectedLink._id);
+          }}
+          onShare={() => {
+            // Handle share action in modal
+            console.log("Share from modal", selectedLink._id);
+          }}
+        />
+      )}
+    </>
   );
 } 
