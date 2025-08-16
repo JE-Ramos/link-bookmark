@@ -1,4 +1,4 @@
-// Animation utilities for Link Bookmark
+// Animation utilities
 import { clsx } from "clsx";
 
 // Spring animation configurations

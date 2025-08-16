@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import { BRAND_NAME } from "@/lib/constants/brand";
 
 export const metadata: Metadata = {
-  title: "Design System | Link Bookmark",
-  description: "Component guidelines and design principles for Link Bookmark",
+  title: `Design System | ${BRAND_NAME}`,
+  description: `Component guidelines and design principles for ${BRAND_NAME}`,
 };
 
 export default function DesignSystemLayout({

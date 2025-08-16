@@ -1,9 +1,10 @@
 import { Metadata } from "next";
 import { TopicFeed } from "./components/topic-feed";
 import { AppHeader } from "@/components/shared/app-header";
+import { BRAND_NAME } from "@/lib/constants/brand";
 
 export const metadata: Metadata = {
-  title: "Explore Topics | Link Bookmark",
+  title: `Explore Topics | ${BRAND_NAME}`,
   description: "Discover curated topics with the best links and resources",
 };
 

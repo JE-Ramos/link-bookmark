@@ -1,6 +1,6 @@
-# Admin Guide - Link Bookmark
+# Admin Guide
 
-This guide covers administrative operations for the Link Bookmark application using Convex functions.
+This guide covers administrative operations for the application using Convex functions.
 
 ## Key Concepts
 

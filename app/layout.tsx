@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ConvexClientProvider from "@/components/ConvexClientProvider";
 import { ClerkProvider } from "@clerk/nextjs";
+import { BRAND_NAME, BRAND_TAGLINE, BRAND_DESCRIPTION_SHORT } from "@/lib/constants/brand";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,18 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Link Bookmark - Save & Track Product Deals",
-  description: "Save and track product links from your favorite e-commerce platforms. Get price alerts and never miss a deal.",
+  title: `${BRAND_NAME} - ${BRAND_TAGLINE}`,
+  description: BRAND_DESCRIPTION_SHORT,
   keywords: "bookmark, deals, price tracking, save links",
-  authors: [{ name: "Link Bookmark Team" }],
+  authors: [{ name: `${BRAND_NAME} Team` }],
   icons: {
     icon: "/convex.svg",
     apple: "/convex.svg",
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Link Bookmark - Save & Track Product Deals",
-    description: "Save and track product links from your favorite e-commerce platforms.",
+    title: `${BRAND_NAME} - ${BRAND_TAGLINE}`,
+    description: BRAND_DESCRIPTION_SHORT,
     type: "website",
   },
 };

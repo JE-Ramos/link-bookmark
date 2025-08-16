@@ -1,4 +1,6 @@
-# Link Bookmark
+# Link Bookmark (Configurable Brand)
+
+> **Note**: The brand name is configurable via the `NEXT_PUBLIC_BRAND_NAME` environment variable.
 
 A modern web application for saving and organizing links from any website. Built with Next.js 15 following best practices with Server Components and a clean feature-based architecture.
 
@@ -33,8 +35,8 @@ A modern web application for saving and organizing links from any website. Built
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/link-bookmark.git
-   cd link-bookmark
+   git clone https://github.com/yourusername/your-repo.git
+   cd your-repo
    ```
 
 2. Install dependencies:
@@ -44,15 +46,19 @@ A modern web application for saving and organizing links from any website. Built
 
 3. Set up environment variables:
    ```bash
-   cp .env.example .env.local
+   cp .env.local.example .env.local
    ```
    
    Fill in your Convex and Clerk credentials in `.env.local`:
    ```
+   # Public Environment Variables
    NEXT_PUBLIC_CONVEX_URL=your_convex_url
-   CONVEX_DEPLOY_KEY=your_convex_deploy_key
    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   NEXT_PUBLIC_BRAND_NAME="Your Brand Name"
+   
+   # Server-only Environment Variables
    CLERK_SECRET_KEY=your_clerk_secret_key
+   CONVEX_DEPLOY_KEY=your_convex_deploy_key
    ```
 
 4. Deploy Convex functions:
@@ -70,7 +76,7 @@ A modern web application for saving and organizing links from any website. Built
 ## Project Structure
 
 ```
-link-bookmark/
+[Your App Name]/
 ├── app/                    # Next.js app directory
 │   ├── (main)/            # Main app routes
 │   │   ├── bookmarks/     # User's bookmarked links

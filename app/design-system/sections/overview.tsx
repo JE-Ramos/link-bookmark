@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Component, Layers, ExternalLink, Layout } from "lucide-react";
+import { BRAND_NAME } from "@/lib/constants/brand";
 
 export function OverviewSection() {
   return (
@@ -7,7 +8,7 @@ export function OverviewSection() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold tracking-tight">Overview</h1>
         <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
-          The Link Bookmark Design System provides the foundation for building our MVP - 
+          The {BRAND_NAME} Design System provides the foundation for building our MVP - 
           a web application for creating and managing topics by aggregating relevant links.
         </p>
       </div>
